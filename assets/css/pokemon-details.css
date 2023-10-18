@@ -1,0 +1,151 @@
+#card_pokemon {
+  padding: 20px;
+}
+.card_pokemon_detail {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.253);
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 20px;
+}
+
+.card_pokemon_detail--header,
+.card_pokemon_detail--body {
+  padding: 20px;
+}
+
+.card_pokemon_detail--header,
+.card_pokemon_detail--body,
+.card_pokemon_detail--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card_pokemon_detail--header--title {
+  font-size: 3rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.card_pokemon_detail--header--number {
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+
+.card_pokemon_detail--body--type {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card_pokemon_detail--body--type span {
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.card_pokemon_detail--body--photo {
+  width: 70%;
+}
+
+.card_pokemon_detail--body--photo img {
+  width: 100%;
+}
+
+.card_pokemon_detail--footer {
+  align-items: flex-start;
+  background-color: rgba(226, 226, 226, 0.829);
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 20px;
+}
+
+.card_pokemon_detail--footer--abilities h3,
+.card_pokemon_detail--footer--stats h3 {
+  margin-bottom: 10px;
+  color: #474747;
+}
+.card_pokemon_detail--footer--abilities {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.card_pokemon_detail--footer--abilities span {
+  background-color: rgb(46, 46, 46);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 2px;
+}
+
+.card_pokemon_detail--footer--stats {
+  width: 100%;
+}
+
+progress {
+  width: 100%;
+}
+
+.stat span progress {
+  height: 5px;
+  background: #8b1f1f;
+  color: #c21b1b;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.stat span #hp::-webkit-progress-value {
+  background: #1b693c;
+}
+.stat span #attack::-webkit-progress-value {
+  background: #be2e2e;
+}
+.stat span #defense::-webkit-progress-value {
+  background: #b4ac3c;
+}
+.stat span #special-attack::-webkit-progress-value {
+  background: #ff0022;
+}
+.stat span #special-defense::-webkit-progress-value {
+  background: #a7c019;
+}
+.stat span #speed::-webkit-progress-value {
+  background: #3c80e6;
+}
+
+/* Altera a cor da barra em navegadores com webkit (Chrome, Safari etc) */
+::-webkit-progress-bar {
+  background-color: #d6d6d6;
+}
+
+.btn__prev {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn__prev--button {
+  cursor: pointer;
+}
+
+.btn__prev--button {
+  color: #fff;
+  background-color: #30a7d7;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn__prev--button:hover {
+  background-color: #2990b9;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
